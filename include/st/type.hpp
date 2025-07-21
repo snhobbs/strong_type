@@ -68,6 +68,9 @@ namespace st
 
         using value_type = T;
         using tag_type = Tag;
+        explicit operator T() const {
+          return this->value();
+        }
     };
 }
 
